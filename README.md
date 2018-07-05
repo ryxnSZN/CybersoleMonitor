@@ -2,11 +2,11 @@
 
 ## Getting Started
 
-A) Clone/Download this Repo
-B) Run 'npm install'
-C) Edit config.json to your liking
-D) Create your proxy file and either leave it empty for proxyless or add proxies
-E) Run 'node monitor'
+* Clone/Download this Repo
+* Run 'npm install'
+* Edit config.json to your liking
+* Create your proxy file and either leave it empty for proxyless or add proxies
+* Run 'node monitor'
 
 ### Prerequisites
 
