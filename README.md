@@ -1,6 +1,4 @@
-# Project Title
-
-Cybersole Monitor
+# Cybersole Monitor
 
 ## Getting Started
 
