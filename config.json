@@ -1,0 +1,5 @@
+{
+  "monitorDelay": 700,
+  "proxyFile": "proxies.txt",
+  "discordWebhook": null
+}
