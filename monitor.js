@@ -5,7 +5,9 @@ const fs = require('fs')
 const readline = require('readline');
 const config = require('./config.json')
 const notifier = require('node-notifier');
+var hookcord = require('hookcord');
 
+var Base = hookcord.Base;
 let restockLive = false
 
 let proxyArray = []
@@ -36,6 +38,30 @@ function checkCyber() {
       if (data.available && !restockLive) {
         restockLive = true
         console.log('Restocked!!')
+        var hook = new Base("", {'link': config.discordWebhook}, {
+          'embeds': [{
+            'title': 'Cybersole Restock',
+            'url': 'https://www.cybersole.io/',
+            'color': '65280',
+            'fields': [{
+              'name': 'Question',
+              'value': `${data.question}`,
+              'inline': true
+            },
+            {
+              'name': 'Link',
+              'value': 'https://www.cybersole.io/',
+              'inline': false
+            }],
+            'thumbnail': {
+              'url': 'https://pbs.twimg.com/profile_images/982280328143392769/_KELHBk9_400x400.jpg'
+            },
+            'timestamp': new Date()
+          }]
+        });
+        hook.send().then(function(request) {
+          console.log('Sent To Discord')
+        });
         notifier.notify({
           title: 'Cybersole Restock',
           message: `Question: ${data.question}`,
@@ -47,7 +73,7 @@ function checkCyber() {
       }
       else if (!data.available && restockLive)
         restockLive = false
-
+        
       setTimeout(checkCyber, config.monitorDelay)
     }
   });

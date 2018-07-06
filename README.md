@@ -2,11 +2,11 @@
 
 ## Getting Started
 
-* Clone/Download this Repo
-* Run 'npm install'
-* Edit config.json to your liking
-* Create your proxy file and either leave it empty for proxyless or add proxies
-* Run 'node monitor'
+A) Clone/Download this Repo
+B) Run 'npm install'
+C) Edit config.json to your liking
+D) Create your proxy file and either leave it empty for proxyless or add proxies
+E) Run 'npm start'
 
 ### Prerequisites
 
@@ -17,10 +17,12 @@ You need to have Node.js installed
 * [Cloudscraper](https://www.npmjs.com/package/cloudscraper) - Used for bypassing Cyber's detection
 * [Node-Notifier](https://www.npmjs.com/package/node-notifier) - Sending desktop notifications
 * [Opn](https://www.npmjs.com/package/opn) - Opening the Cyber page in your web browser
+* [Hookcord](https://www.npmjs.com/package/hookcord) - Discord Webhook
 
 ## Authors
 
 * **ryxnSZN** - *Developer* - [Twitter](https://twitter.com/ryxnSZN)
+* **h4ck3rs** - *Added Discord Webhook* - [Github](https://github.com/h4ck3rs/)
 
 ## License
 
