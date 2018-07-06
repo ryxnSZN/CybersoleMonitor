@@ -1,5 +1,5 @@
 {
   "monitorDelay": 700,
   "proxyFile": "proxies.txt",
-  "discordWebhook": "https://canary.discordapp.com/api/webhooks/459582133808398336/C__BKWCrEDU-eMsABfKa_5GrieNGnUr-NE-UBxzh9-89CfJYad6lVk4u2K77qmgVC_oO"
+  "discordWebhook": ""
 }
